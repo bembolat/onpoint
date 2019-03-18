@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onpoint-task</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="visually-hidden">Терапия СД2</h1>
+    <!-- fIRST BLOCK -->
+    <section class="mountains" id="mountains">
+      <h2 class="mountains__title">Всегда ли цели терапии СД2 на поверхности?</h2>
+      <ul class="mountains__list">
+        <li class="mountains__item mountains__item-1">Цель по HbA1c</li>
+        <li class="mountains__item mountains__item-2">Гипоклемия</li>
+        <li class="mountains__item mountains__item-3">Осложнения СД</li>
+        <li class="mountains__item mountains__item-4">СС риски</li>
+      </ul>
+      <span class=" mountains__circular-1"></span><span class=" mountains__circular-1"></span><span class=" mountains__circular-1"></span>
+      <span class=" mountains__circular-2"></span><span class=" mountains__circular-2"></span><span class=" mountains__circular-2"></span>
+      <span class=" mountains__circular-3"></span><span class=" mountains__circular-3"></span><span class=" mountains__circular-3"></span>
+      <span class=" mountains__circular-4"></span><span class=" mountains__circular-4"></span><span class=" mountains__circular-4"></span>
+
+      <div class="mountains__down">
+        <button class="mountains__button">Листайте вниз</button>
+      </div>
+    </section>
+    <!-- END -->
+
+    <!-- SECOND BLOCK -->
+    <section class="basics" id="basics">
+      <h2 class="basics__title">Основа терапии - патогенез СД2</h2>
+    </section>
+    <!-- END -->
+
+    <!-- lAST BLOCK -->
+    <section class="slider" id="slider">
+      <h2 class="visually-hidden">Слайды схем патогенеза СД2</h2>
+      <ul class="slider__list">
+        <li class="slider__item slider__item-1">
+          <h3 class="slider__title">Звенья патогенеза СД2</h3>
+        </li>
+        <li class="slider__item slider__item-2">
+          <h3 class="slider__title">Смертельный октет</h3>
+        </li>
+        <li class="slider__item slider__item-3">
+          <h3 class="slider__title">Звенья патогенеза СД2</h3>
+        </li>
+      </ul>
+        <div class="slider__toggle">
+          <div class="slider__range">
+            <input class="slider__input" type="range" min="1" max="100" value="100">
+          </div> 
+          <ul class="slider__years">
+            <li class="slider__number">1998</li>
+            <li class="slider__number">2009</li>
+            <li class="slider__number">2016</li>
+          </ul>    
+        </div>
+      </div>
+    </section>
+    <!-- END -->
+  </div>
+  <!-- NAVIGATION OF PAGE -->
+  <div class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item navigation__item-1 navigation__item--active"><a href="#mountains"></a></li>
+      <li class="navigation__item navigation__item-2"><a href="#basics"></a></li>
+      <li class="navigation__item navigation__item-3"><a href="#slider"></a></li>
+    </ul>
+  </div>
+  <!-- END -->
+  <script src="js/main.js"></script>
+</body>
+</html>

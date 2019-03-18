@@ -1,0 +1,124 @@
+.mountains {
+	position: relative;
+	padding-top: 170px;
+	height: 100vh;
+	overflow: hidden;
+	background: url(../img/mountains@1x.jpg) no-repeat;
+	background-size: 100% 100%;
+	@media (min-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+    background: url(../img/mountains@2x.jpg) no-repeat top center;
+    background-size: 100% 100%;
+  }
+	&__title {
+		width: 720px;
+		@include reset;
+		margin-left: 50px;
+		@include font(48px, 65px);
+		color: $blue-font;
+	}
+	&__item {
+		position: absolute;
+		font-family: "Lato", sans-serif;;
+		font-size: 20px;
+		&-1 {
+			right: 21%;
+			top: 35%;	
+		}
+		&-2 {
+			left: 21%;
+			top: 51%;
+		}
+		&-3 {
+			right: 44%;
+			top: 66%;
+		}
+		&-4 {
+			right: 14%;
+			top: 63%;
+		}
+	}
+	& span {
+		position: absolute;
+		display: block;
+		border-radius: 50%;
+    border: 1px solid #cf1437;
+		animation: circular 4s 0s infinite;
+	}
+	&__circular-1 {
+		right: 41%;
+		top: 36%;
+		width: 45px;
+		height: 45px;
+		&:nth-child(2) {
+			animation-delay: 1.35s;
+		}
+		&:nth-child(3) {
+			animation-delay: 2.65s;
+		}
+	}
+	&__circular-2 {
+		left: 27%;
+		top: 56%;
+		width: 27px;
+		height: 27px;
+		&:nth-child(2) {
+			animation-delay: 1.35s;
+		}
+		&:nth-child(3) {
+			animation-delay: 2.62s;
+		}
+	}
+	&__circular-3 {
+		left: 47%;
+		top: 70%;
+		width: 18px;
+		height: 18px;
+		&:nth-child(2) {
+			animation-delay: 1.35s;
+		}
+		&:nth-child(3) {
+			animation-delay: 2.62s;
+		}
+	}
+	&__circular-4 {
+		right: 18%;
+		top: 68%;
+		width: 18px;
+		height: 18px;
+		&:nth-child(2) {
+			animation-delay: 1.35s;
+		}
+		&:nth-child(3) {
+			animation-delay: 2.62s;
+		}
+	}
+	&__down {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		height: 70px;
+		background: url(../img/next.png) no-repeat;
+		background-size: 100% 100%;
+		text-align: center;
+		opacity: 1;
+		transition: opacity 1s ease-out;
+	}
+	&__button {
+		background: 0 0;
+		border: 0;
+		outline: 0;
+		color: #fff;
+		font-size: 16px;
+		&::before {
+			@include pseudo;
+	    width: 22px;
+	    left: 50%;
+	    height: 22px;
+	    border-right: 2px solid #fff;
+	    border-top: 2px solid #fff;
+	    transform: rotate(135deg) translate(100%, -50%);
+		}
+	}
+}
+
+

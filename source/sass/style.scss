@@ -1,0 +1,11 @@
+//Основные
+@import "normalize";
+@import "mixins";
+@import "variables";
+@import "scaffolding";
+
+//Main
+@import "blocks/mountains";
+@import "blocks/basics";
+@import "blocks/slider";
+@import "blocks/navigation";

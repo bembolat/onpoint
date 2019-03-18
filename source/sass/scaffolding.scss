@@ -1,0 +1,109 @@
+/* GothamPro - cyrillic */
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('GothamPro'), local('GothamPro'),
+       url('../fonts/GothamPro.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/GothamPro.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'GothamProLight';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('GothamProLight'), local('GothamProLight'),
+       url('../fonts/GothamProLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/GothamProLight.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  min-width: 320px;
+  @include reset;
+  font: {
+  family: $font-stack;
+  weight: 400;
+  size: 16px;
+  }
+  line-height: 25px;
+  color: $black;
+  background-color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type=checkbox].visually-hidden,
+input[type=radio].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+button {
+  outline: 0;
+}
+.show {
+  opacity: 1 !important;
+  transition: opacity 1s;
+  display: block !important;
+}
+
+ul {
+  @include reset;
+}
+
+::-webkit-scrollbar {
+
+width: 0px;
+
+}
+
+@keyframes circular {
+  0% {
+    background-color: rgba(247,139,31,1);
+    transform: scale(0);
+    border: 1px solid rgba(239, 20, 55, 0);
+  }
+  90% {
+    border: 1px solid rgba(239, 20, 55, .7);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    border: 1px solid rgba(239, 20, 55, 0);
+    opacity: 0;
+  }
+}
+
+section {
+  max-width: 100%;
+}
