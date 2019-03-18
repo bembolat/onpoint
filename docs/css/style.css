@@ -622,14 +622,12 @@ section {
       height: 56px;
       background: url("../img/thumb.png");
       background-size: 100% 100%;
-      cursor: pointer;
       outline: 0; }
     .slider__input::-moz-range-thumb {
       width: 44px;
       height: 55px;
       background: url("../img/thumb.png");
       background-size: 100% 100%;
-      cursor: pointer;
       outline: 0; }
     .slider__input--active::-webkit-slider-thumb {
       width: 42px;
