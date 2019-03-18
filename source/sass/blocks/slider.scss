@@ -66,6 +66,7 @@
     border-radius: 5px;
     background: #d3d3d3;
     outline: none;
+    cursor: none;
     &::-webkit-slider-thumb {
 	  -webkit-appearance: none;
 	  appearance: none;
@@ -74,6 +75,7 @@
 	  background: url('../img/thumb.png');
 	  background-size: 100% 100%;
 	  outline: 0;
+	  cursor: none;
 	  }
 		&::-moz-range-thumb {
 		  width: 44px;
@@ -81,19 +83,23 @@
 		  background: url('../img/thumb.png');
 		  background-size: 100% 100%;
 		  outline: 0;
+		  cursor: none;
 		}
 		&--active {
+			cursor: none;
 			&::-webkit-slider-thumb {
 				width: 42px;
 			  height: 42px;
 			  background: url('../img/thumb-active.png');
 			  background-size: 100% 100%;
+			  cursor: none;
 			}
 			&::-moz-range-thumb {
 				width: 42px;
 			  height: 42px;
 			  background: url('../img/thumb-active.png');
 			  background-size: 100% 100%;
+			  cursor: none;
 			}
 		}
 	}
