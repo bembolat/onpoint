@@ -66,7 +66,8 @@
     border-radius: 5px;
     background: #d3d3d3;
     outline: none;
-    cursor: none;
+	  cursor: none;
+	  border: 0;
     &::-webkit-slider-thumb {
 	  -webkit-appearance: none;
 	  appearance: none;
@@ -74,32 +75,40 @@
 	  height: 56px;
 	  background: url('../img/thumb.png');
 	  background-size: 100% 100%;
-	  outline: 0;
+	  outline: none;
 	  cursor: none;
+	  border: 0;
 	  }
 		&::-moz-range-thumb {
 		  width: 44px;
 		  height: 55px;
 		  background: url('../img/thumb.png');
 		  background-size: 100% 100%;
-		  outline: 0;
+		  outline: none;
 		  cursor: none;
+		  border: 0;
 		}
 		&--active {
-			cursor: none;
+			outline: none;
+		  cursor: none;
+	  	border: 0;
 			&::-webkit-slider-thumb {
 				width: 42px;
 			  height: 42px;
 			  background: url('../img/thumb-active.png');
 			  background-size: 100% 100%;
+			  outline: none;
 			  cursor: none;
+			  border: 0;
 			}
 			&::-moz-range-thumb {
 				width: 42px;
 			  height: 42px;
 			  background: url('../img/thumb-active.png');
 			  background-size: 100% 100%;
+			  outline: none;
 			  cursor: none;
+			  border: 0;
 			}
 		}
 	}
