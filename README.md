@@ -1,1 +1,1 @@
-# test for onpoint
+# resolution for iPad
